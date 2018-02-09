@@ -1,0 +1,15 @@
+1.run sql
+=> sqlplus / as sysdba
+
+2. connnect user
+=> conn hr
+
+3. unlock a user account
+=> alter user hr identified by hr account unlock;
+
+4. create a simple table
+=>
+create table student(id varchar(11), name varchar(30), address varchar(100), phone varchar(11), cgpa float);
+
+5. show table
+=> desc student

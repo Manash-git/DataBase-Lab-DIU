@@ -1,0 +1,19 @@
+1. Create a Student table with necessary integrity constraint
+
+=> create table student(studid varchar2(13),studname varchar2(20) not null,email varchar2(30) default 'info@diu.edu.bd',constraint pk_stud primary key (studid));
+
+2. Create a department table with necessary integrity constraint:
+
+=> create table department(deptid varchar2(3),deptname varchar2(30),Constraint pk_dept Primarykey (deptid));
+
+3. Create a course table with courseid as the primary key and deptid as the foreign key from the
+department table:
+
+=> create table course(courseid varchar2(7),deptid varchar2(3) not null,title varchar2(30) not null,credits number(3,1),Constraint pk_crs Primary key (courseid, deptid),Constraint fk_crs_dept Foreign key (deptid) references department (deptid));
+
+6. Create a instructor table
+
+=> Create table instructor(instid varchar2(15),deptid varchar2(3) not null,instname varchar2(30) not null,
+designation varchar2(30) constraint CK_inst Check (designation in ('Asstt Professor', 'Associate Professor', 'Professor')),email varchar2(100) default 'info@diu.edu.bd',Constraint pk_inst Primary key (instid), Constraint fk_inst_dep Foreign key (deptid) references department (deptid));
+
+

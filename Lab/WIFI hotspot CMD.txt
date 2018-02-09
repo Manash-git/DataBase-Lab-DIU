@@ -1,0 +1,9 @@
+Step 1: Make wifi hotspot using command in windows
+
+=> netsh wlan set hostednetwork mode=allow ssid=Legend key=lol
+
+Step 2: turn on / off
+
+=> netsh wlan start hostednetwork    // on
+
+=> netsh wlan stop hostednetwork    // off

@@ -1,0 +1,33 @@
+1. Modify data type of a column
+=> alter table student modify (Id int);
+=> alter table student modify (Id varchar(30));
+
+2. New column addition
+=> alter table student add ( Semester int, Date_of_Birth varchar(10));
+
+3. Delete a column
+=> alter table student drop column Address;
+
+4. Delete Multiple column
+=> alter table student drop (Address, Name);
+
+5. Rename a column
+=> alter table student rename column Date_of_Birth to DOB;
+
+6. Rename a table
+=> rename student to std;
+
+7. Make primary key in a table on existence column
+=> alter table std add constraint PR_Key primary key (ID);
+
+8. Delete primary key in a table
+=> alter table std drop constraint PR_Key;
+
+9. Make a column Unique 
+=> alter table std modify (Name varchar(100) unique);
+
+10. Add Default value of a column
+=> alter table std modify (Email varchar(30) default 'cse@diu.edu.bd');
+
+11. Delete a table from Database
+=> drop table student;

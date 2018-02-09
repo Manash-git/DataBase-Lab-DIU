@@ -1,0 +1,16 @@
+1. Insert value in a table (custom) 
+=> insert into std (Id, Name, Address, Phone, Cgpa) values(1,'Manash','Dhanmondi','123456',3.50);
+
+2. Save and show all data after inserting
+=> select * from std;
+
+3. Show data in table form
+=> set lines 100;
+=> set pagesize 100;
+=> set lines 100 pagesize 100;   // (multiple command)
+
+4. Insert all values according to column sequence
+=> insert into std values (1,'Manash','Dhanmondi','123456',3.50);
+
+5. Custom show data from table
+=> select Id,Name from student;

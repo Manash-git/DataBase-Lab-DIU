@@ -1,0 +1,48 @@
+1. Insert row of information in the student table:
+
+=> Insert all
+into student(studid, studname) values('1999-1-20-004','Charles Babbage')
+into student(studid, studname) values('1999-1-20-005','Alan Turing')
+into student(studid, studname, email) values('1999-1-20-006','Todd Mars','todd@diu.edu.bd)
+SELECT * FROM DUAL;
+
+2. Insert the following row in to the department table:
+
+=> Insert all
+into department(deptid, deptname) values('001','Computer Science')
+into department(deptid, deptname) values('002','Computer Science and Engg')
+into department(deptid, deptname) values('003','Business Administration')
+into department(deptid, deptname) values('004','Communication and Infor Tech')
+into department(deptid, deptname) values('005','English')
+SELECT * FROM DUAL;
+
+3. Insert the following row in to the course table:
+
+=> Insert all
+into course values('cse201','001','Database Systems', 3.0)
+into course values('eng101','005','English Conversation', 3.0)
+into course values('cse202','001','Structured Programming', 3.0)
+into course values('cit201','004','Mobile Communication', 3.0)
+into course values('bus101','003','Business Communication', 3.0)
+into course values('cse211','002','Algorithm', 4.0)
+into course values('mgt311','003','Production Management', 3.5)
+into course values('cse411','002','Artificial Intelligence', 3.0)
+SELECT * FROM DUAL;
+
+4. Insert the following row in to the instructor table:
+
+=> Insert all
+into instructor values('AAA','005','Mr Rozario','Professor','aaa@diu.edu.bd')
+into instructor values('ABB','004','Mr Jaya Vigayan','Asstt Professor','abb@diu.edu.bd')
+into instructor values('ABA','003','Mr Dinu Selvam','Professor','aba@diu.edu.bd')
+into instructor values('BBC','003','Mr Jaya Prakash','Asstt Professor','bbc@diu.edu.bd')
+into instructor values('BBD','002','Ms Sugumaran','Asstt Professor','bbd@diu.edu.bd')
+into instructor values('ADA','001','Ms Minnal','Professor','ada@diu.edu.bd')
+into instructor values('AAD','005','Mr Franko','Asstt Professor','aad@diu.edu.bd')
+SELECT * FROM DUAL;
+
+5. Display all the list of the courses at different departments:
+=> Select * from course ;
+
+6. Display the list of courses for the Computer Science and Engineering department:
+=> Select * from course where deptid= ‘002’;

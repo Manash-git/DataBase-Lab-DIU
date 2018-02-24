@@ -1,0 +1,12 @@
+Use inventory;
+
+SELECT * FROM product where Category="Gadgets";
+
+SELECT PName,Price,Manufacturer FROM product where Price>100;
+SELECT * FROM product where Category<>"Gadgets";
+SELECT * FROM product where Category<>"Gadgets" and Category<>"HouseHold";
+SELECT * FROM product where PName like "%gizmo%";
+SELECT distinct Category FROM product ;
+
+SELECT PName,Price,Manufacturer FROM product where PName like "%gizmo%" and Price>50 order by Price,PName ;arrange in assending order
+SELECT PName,Price,Manufacturer FROM product where PName like "%gizmo%" and Price>50 order by Price,PName desc;// descdinging order
